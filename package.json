@@ -1,0 +1,12 @@
+{
+  "name": "the-great-gatsby-theme",
+  "description": "A great base for kimdontdoit gatsby-based projects",
+  "version": "1.0.0",
+  "main": "gatsby-config.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^4.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
