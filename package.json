@@ -1,5 +1,5 @@
 {
-  "name": "the-great-gatsby-theme",
+  "name": "@kimdontdoit/the-great-gatsby-theme",
   "description": "A great base for kimdontdoit gatsby-based projects",
   "version": "1.0.0",
   "main": "gatsby-config.js",
