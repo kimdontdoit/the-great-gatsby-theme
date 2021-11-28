@@ -1,0 +1,101 @@
+// GLOBAL
+@charset "utf-8";
+//@import "./normalize";
+
+// Update Bulma's global variables
+// https://bulma.io/documentation/customize/variables/
+
+$background: #fff;
+
+$link: #000000;
+$primary: #1de68c;
+/*
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$dark: $grey-darker;
+$text: $grey-dark;*/
+
+$family-primary: "Plus Jakarta Sans";
+
+// Update some of Bulma's component variables
+/*$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;*/
+$card-content-padding: 0;
+
+@import "~bulma/bulma.sass";
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  border: 1px solid #000;
+  border-radius: 0;
+  outline: 0;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.button {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+.cta {
+  border-radius: 28px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

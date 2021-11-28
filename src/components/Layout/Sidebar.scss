@@ -1,0 +1,139 @@
+.sidebar {
+  flex: 0 0 320px;
+  color: #999;
+  transition: flex-basis 0.5s ease-out;
+  z-index: 200;
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  a {
+    color: #999;
+  }
+
+  .innerSidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    .upper,
+    .lower {
+      position: relative;
+      padding: 1.5rem;
+    }
+
+    .upper {
+      .logo {
+        .logoImg {
+          height: 52px;
+          width: 52px;
+        }
+
+        margin-bottom: 2rem;
+      }
+
+      .primaryNav {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .lower {
+      ul.copyright {
+        li {
+          font-size: 12px;
+          padding-bottom: 4px;
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.sideNav {
+  .level0 {
+    padding-bottom: 0.5rem;
+
+    > a {
+      font-weight: 700;
+
+      line-height: 100%;
+      padding: 16px;
+      border-radius: 8px;
+
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &.active,
+      &:hover {
+        color: #000000;
+        text-decoration: none;
+        background: #efefef;
+      }
+
+      .navLabel {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.collapse-sidebar {
+  position: absolute;
+  right: -18px;
+  background: #fff;
+
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+
+  .collapse-btn {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.sidebar-collapsed {
+  flex: 0 0 100px;
+
+  /*
+  .logo img {
+    width: 52px !important;
+    height: 52px !important;
+  }*/
+
+  .navLabel {
+    position: absolute;
+    left: 60px;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 12px;
+    border-radius: 8px;
+    display: none;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .level0 a:hover {
+    .navLabel {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.section.postGallery {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.galleryCanva {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+
+  // TODO maybe allow scroll
+
+  > .galleryCanvaItem {
+    //display: flex;
+    //flex: 0 0 auto;
+
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    margin: 0 8px 0 0;
+    border-radius: $card-radius;
+  }
+}
+
+.galleryNav {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, 80px);
+  margin-top: 36px;
+
+  > .galleryNavItem {
+    position: relative;
+    width: 80px;
+    height: 60px;
+
+    border-radius: $card-radius;
+    overflow: hidden;
+    transition: box-shadow 200ms ease-in-out, border 200ms ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    &.selected {
+      border: 2px solid $primary;
+    }
+  }
+}

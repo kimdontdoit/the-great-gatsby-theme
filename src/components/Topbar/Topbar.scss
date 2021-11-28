@@ -1,0 +1,35 @@
+.topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .innerTopbar {
+    @include wrapper;
+
+    display: flex;
+    flex-direction: row;
+
+    > * {
+      flex: 1;
+    }
+
+    .left {
+    }
+
+    .right {
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        :not(:last-of-type) {
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+}

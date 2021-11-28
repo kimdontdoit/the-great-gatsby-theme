@@ -1,0 +1,17 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  flex: 1;
+
+  .topbar:not(.fixed) + .content {
+    padding-top: 80px;
+  }
+}
+
+.content {
+  min-height: 100vh;
+}
