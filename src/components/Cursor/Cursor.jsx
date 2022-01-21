@@ -5,7 +5,7 @@ import "./Cursor.scss";
 const Cursor = (props) => {
   const { mouseX, mouseY } = useCursorPosition();
   const { image } = props;
-  console.log(image);
+
   return (
     <div
       className="cursor fixed"
