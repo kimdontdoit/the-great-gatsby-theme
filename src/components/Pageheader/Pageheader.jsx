@@ -4,16 +4,10 @@ import { Link } from "gatsby";
 export default function Pageheader({ title, subtitle, crumbs, date, center }) {
   return (
     <header className={`container ${center ? "text-center" : ""}`}>
-      {title && (
-        <h1 itemProp="headline" className={`text-4xl font-black`}>
-          {title}
-        </h1>
-      )}
-
       {crumbs && (
-        <div className={`crumbs font-bold opacity-60 mt-4`}>
-          <Link to={`/`}>{`Home`}</Link>
-          <span> / </span>
+        <div className={`crumbs opacity-60 mb-4`}>
+          {/*<Link to={`/`}>{`Accueil`}</Link>
+          <span> / </span>*/}
 
           {crumbs.map((val, index) => {
             const isLast = index === crumbs.length - 1;
@@ -31,6 +25,13 @@ export default function Pageheader({ title, subtitle, crumbs, date, center }) {
           })}
         </div>
       )}
+
+      {title && (
+        <h1 itemProp="headline" className={`text-4xl font-black`}>
+          {title}
+        </h1>
+      )}
+
       <div className={`metas`}>
         {subtitle && <p className={`mt-4 opacity-60`}>{subtitle}</p>}
 
