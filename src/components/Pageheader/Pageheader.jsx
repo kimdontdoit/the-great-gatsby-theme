@@ -13,12 +13,18 @@ export default function Pageheader({ title, subtitle, crumbs, date, center }) {
             const isLast = index === crumbs.length - 1;
 
             if (isLast) {
-              return <Link to={val.url}>{val.label}</Link>;
+              return (
+                <Link key={index} to={val.url}>
+                  {val.label}
+                </Link>
+              );
             }
 
             return (
               <>
-                <Link to={val.url}>{val.label}</Link>
+                <Link key={index} to={val.url}>
+                  {val.label}
+                </Link>
                 <span> / </span>
               </>
             );
