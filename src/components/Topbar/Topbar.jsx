@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { Link } from "gatsby";
 
-import "./Topbar.scss";
+import "./Topbar.css";
 
 const Topbar = (props) => {
   const { topbarFixed } = props;

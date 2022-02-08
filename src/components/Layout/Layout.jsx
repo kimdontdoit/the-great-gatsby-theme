@@ -5,7 +5,7 @@ import Sidebar from "@kimdontdoit/the-great-gatsby-theme/src/components/Layout/S
 
 import SettingsContext from "@kimdontdoit/the-great-gatsby-theme/src/context/SettingsContext";
 
-import "@kimdontdoit/the-great-gatsby-theme/src/components/Layout/Layout.scss";
+import "@kimdontdoit/the-great-gatsby-theme/src/components/Layout/Layout.css";
 
 const Layout = ({ children, topbarFixed }) => {
   return (

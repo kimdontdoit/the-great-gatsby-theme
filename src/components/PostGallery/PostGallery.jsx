@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./PostGallery.scss";
+import "./PostGallery.css";
 
 export default function PostGallery({ post }) {
   const [currentSlidePos, setCurrentSlidePos] = useState(0);

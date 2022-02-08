@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Heading.scss";
+import "./Heading.css";
 
 const Heading = ({ tag, size, children, ...otherProps }) => {
   const Tag = `${tag}`;

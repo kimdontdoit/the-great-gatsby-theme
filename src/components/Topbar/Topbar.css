@@ -6,8 +6,8 @@
   z-index: 100;
 
   .innerTopbar {
-    @include wrapper;
-
+    margin: auto;
+    padding: 1.25rem; // 36px ?
     display: flex;
     flex-direction: row;
 

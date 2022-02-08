@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "./Card.scss";
+import "./Card.css";
 
 const Card = ({ postNode }) => {
   /* Prepare data */

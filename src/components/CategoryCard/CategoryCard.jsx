@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./CategoryCard.scss";
+import "./CategoryCard.css";
 
 const CategoryCard = ({ postNode }) => {
   /* Prepare data */

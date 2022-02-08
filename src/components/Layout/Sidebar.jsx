@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import "./Sidebar.scss";
+import "./Sidebar.css";
 
 import {
   BiHomeAlt,
