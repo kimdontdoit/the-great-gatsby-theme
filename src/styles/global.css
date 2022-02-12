@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* {
--webkit-font-smoothing: antialiased;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
 html {
   overflow: hidden;
   height: 100%;

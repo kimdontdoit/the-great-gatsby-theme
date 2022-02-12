@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import classNames from "../../utils/classNames";
+import colorBasedOnBg from "../../utils/colorBasedOnBg";
+
 import * as classes from "./Pageheader.module.css";
 
 export default function Pageheader({
@@ -9,14 +12,21 @@ export default function Pageheader({
   subtitle,
   crumbs,
   children,
+  color,
 }) {
+  let textColor = "000000";
+  if (color) {
+    textColor = colorBasedOnBg(color, "#FFFFFF", "#000000");
+  }
+
+  console.log(textColor);
   return (
-    <header className={`container ${center ? "text-center" : ""}`}>
+    <header
+      className={classNames("container", center ? "text-center" : "")}
+      style={{ color: textColor }}
+    >
       {crumbs && (
         <div className={`${classes.crumbs}`}>
-          {/*<Link to={`/`}>{`Accueil`}</Link>
-          <span> / </span>*/}
-
           {crumbs.map((val, index) => {
             const isLast = index === crumbs.length - 1;
 
@@ -46,7 +56,7 @@ export default function Pageheader({
         </h1>
       )}
 
-      <div className={`${classes.metas}`}>
+      <div>
         {subtitle && <p className={`${classes.subtitle}`}>{subtitle}</p>}
 
         {children}
