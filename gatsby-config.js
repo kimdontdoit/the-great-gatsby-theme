@@ -10,4 +10,5 @@ module.exports = {
     defaultImage: ``,
     twitterUsername: `@kimdontdoit`,
   },
+  plugins: [`gatsby-plugin-postcss`],
 };

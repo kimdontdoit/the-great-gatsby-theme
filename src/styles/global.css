@@ -1,5 +1,9 @@
-* {
-  -webkit-font-smoothing: antialiased;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* {
+-webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -65,3 +69,4 @@ button {
     cursor: pointer;
   }
 }
+*/

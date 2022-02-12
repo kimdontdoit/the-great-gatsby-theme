@@ -1,0 +1,11 @@
+.crumbs {
+  @apply font-bold mb-4;
+}
+
+.headline {
+  @apply text-4xl font-black;
+}
+
+.subtitle {
+  @apply mt-4 opacity-60;
+}

@@ -1,11 +1,19 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default function Pageheader({ title, subtitle, crumbs, date, center }) {
+import * as classes from "./Pageheader.module.css";
+
+export default function Pageheader({
+  center,
+  title,
+  subtitle,
+  crumbs,
+  children,
+}) {
   return (
     <header className={`container ${center ? "text-center" : ""}`}>
       {crumbs && (
-        <div className={`crumbs opacity-60 mb-4`}>
+        <div className={`${classes.crumbs}`}>
           {/*<Link to={`/`}>{`Accueil`}</Link>
           <span> / </span>*/}
 
@@ -33,17 +41,15 @@ export default function Pageheader({ title, subtitle, crumbs, date, center }) {
       )}
 
       {title && (
-        <h1 itemProp="headline" className={`text-4xl font-black`}>
+        <h1 itemProp="headline" className={`${classes.headline}`}>
           {title}
         </h1>
       )}
 
-      <div className={`metas`}>
-        {subtitle && <p className={`mt-4 opacity-60`}>{subtitle}</p>}
+      <div className={`${classes.metas}`}>
+        {subtitle && <p className={`${classes.subtitle}`}>{subtitle}</p>}
 
-        {date && (
-          <p className={`font-bold mt-4 opacity-60`}>Publié le {date}</p>
-        )}
+        {children}
       </div>
     </header>
   );
