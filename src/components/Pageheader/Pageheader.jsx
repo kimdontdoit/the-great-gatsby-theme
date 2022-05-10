@@ -49,7 +49,7 @@ export default function Pageheader({
   return (
     <header
       className={classNames(
-        "max-w-screen-md",
+        "md:max-w-screen-md",
         "mx-auto",
         center ? "text-center" : ""
       )}
