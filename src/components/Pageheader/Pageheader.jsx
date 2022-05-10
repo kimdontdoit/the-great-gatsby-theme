@@ -6,6 +6,33 @@ import colorBasedOnBg from "../../utils/colorBasedOnBg";
 
 import * as classes from "./Pageheader.module.css";
 
+const Crumbs = ({ crumbs }) => {
+  return (
+    <div className={`${classes.crumbs}`}>
+      {crumbs.map((val, index) => {
+        const isLast = index === crumbs.length - 1;
+
+        if (isLast) {
+          return (
+            <Link key={index} to={val.url}>
+              {val.label}
+            </Link>
+          );
+        }
+
+        return (
+          <>
+            <Link key={index} to={val.url}>
+              {val.label}
+            </Link>
+            <span> / </span>
+          </>
+        );
+      })}
+    </div>
+  );
+};
+
 export default function Pageheader({
   center,
   title,
@@ -19,36 +46,16 @@ export default function Pageheader({
     textColor = colorBasedOnBg(color, "#FFFFFF", "#000000");
   }
 
-  console.log(textColor);
   return (
     <header
-      className={classNames("container", center ? "text-center" : "")}
-      style={{ color: textColor }}
-    >
-      {crumbs && (
-        <div className={`${classes.crumbs}`}>
-          {crumbs.map((val, index) => {
-            const isLast = index === crumbs.length - 1;
-
-            if (isLast) {
-              return (
-                <Link key={index} to={val.url}>
-                  {val.label}
-                </Link>
-              );
-            }
-
-            return (
-              <>
-                <Link key={index} to={val.url}>
-                  {val.label}
-                </Link>
-                <span> / </span>
-              </>
-            );
-          })}
-        </div>
+      className={classNames(
+        "max-w-screen-md",
+        "mx-auto",
+        center ? "text-center" : ""
       )}
+      //style={{ color: textColor }}
+    >
+      {crumbs && <Crumbs crumbs={crumbs} />}
 
       {title && (
         <h1 itemProp="headline" className={`${classes.headline}`}>

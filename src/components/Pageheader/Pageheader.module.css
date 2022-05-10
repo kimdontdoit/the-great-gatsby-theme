@@ -3,7 +3,7 @@
 }
 
 .headline {
-  @apply text-4xl font-black;
+  @apply text-3xl font-black;
 }
 
 .subtitle {
