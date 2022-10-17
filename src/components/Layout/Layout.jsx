@@ -1,11 +1,11 @@
 import React from "react";
 
-import Topbar from "@kimdontdoit/the-great-gatsby-theme/src/components/Topbar";
-import Sidebar from "@kimdontdoit/the-great-gatsby-theme/src/components/Layout/Sidebar";
+import Topbar from "the-great-gatsby-theme/src/components/Topbar";
+import Sidebar from "the-great-gatsby-theme/src/components/Layout/Sidebar";
 
-import SettingsContext from "@kimdontdoit/the-great-gatsby-theme/src/context/SettingsContext";
+import SettingsContext from "the-great-gatsby-theme/src/context/SettingsContext";
 
-import "@kimdontdoit/the-great-gatsby-theme/src/components/Layout/Layout.css";
+import "the-great-gatsby-theme/src/components/Layout/Layout.css";
 
 const Layout = ({ children, topbarFixed }) => {
   return (
