@@ -4,6 +4,10 @@
   "version": "1.1.9",
   "main": "index.js",
   "author": "kimdontdoit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimdontdoit/the-great-gatsby-theme"
+  },
   "scripts": {
     "develop": "npm run clean && gatsby develop -o -S",
     "start": "npm run develop",
