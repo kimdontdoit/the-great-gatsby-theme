@@ -1,4 +1,4 @@
-const siteUrl = /*process.env.siteUrl || */ `https://kimdontdoit.com`;
+const siteUrl = /* todo process.env.siteUrl || */ `https://kimdontdoit.com`;
 
 module.exports = {
   siteMetadata: {
