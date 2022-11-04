@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import classNames from "../../utils/classNames";
-import colorBasedOnBg from "../../utils/colorBasedOnBg";
+//import colorBasedOnBg from "../../utils/colorBasedOnBg";
 
 import * as classes from "./Pageheader.module.css";
 
@@ -41,10 +41,10 @@ export default function Pageheader({
   children,
   color,
 }) {
-  let textColor = "000000";
+  /*let textColor = "000000";
   if (color) {
     textColor = colorBasedOnBg(color, "#FFFFFF", "#000000");
-  }
+  }*/
 
   return (
     <header

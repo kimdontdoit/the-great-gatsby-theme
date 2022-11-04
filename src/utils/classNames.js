@@ -28,7 +28,7 @@ function toVal(mix) {
   return str;
 }
 
-export default function () {
+export default function classNames() {
   var i = 0,
     tmp,
     x,
