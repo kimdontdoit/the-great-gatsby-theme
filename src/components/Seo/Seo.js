@@ -11,7 +11,6 @@ const Seo = ({ title, description, image, article }) => {
           siteMetadata {
             siteName
             defaultTitle
-            defaultDescription
             author
             siteUrl
             defaultImage
@@ -27,7 +26,6 @@ const Seo = ({ title, description, image, article }) => {
   const {
     siteName,
     defaultTitle,
-    defaultDescription,
     siteUrl,
     author,
     defaultImage,
@@ -37,7 +35,6 @@ const Seo = ({ title, description, image, article }) => {
   const seo = {
     siteName: siteName,
     title: title ? `${title} - ${defaultTitle}` : defaultTitle,
-    description: defaultDescription,
     image: `${siteUrl}${defaultImage}`,
     url: `${siteUrl}${pathname}`,
     author: author,
