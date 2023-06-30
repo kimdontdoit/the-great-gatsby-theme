@@ -1,7 +1,7 @@
 {
     "name": "the-great-gatsby-theme",
     "description": "A great base for gatsby-based projects used by kimdontdoit.com",
-    "version": "1.2.0",
+    "version": "1.9.2",
     "main": "index.js",
     "author": "kimdontdoit",
     "repository": {
